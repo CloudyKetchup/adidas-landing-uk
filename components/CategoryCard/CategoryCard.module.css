@@ -1,0 +1,3 @@
+.category__card img:hover {
+  filter: brightness(50%);
+}
