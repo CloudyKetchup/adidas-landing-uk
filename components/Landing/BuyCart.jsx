@@ -30,7 +30,7 @@ export default function BuyCart({ item, onClose }) {
 				<div className="absolute top-10 right-10" onClick={onClose}>
 					<AiOutlineClose color="black" size="3em" />
 				</div>
-				<div className="w-1 p-10 space-y-4 justify-middle text-bold text-2xl h-full">
+				<div className="w-1 p-10 pr-24 space-y-4 justify-middle text-bold text-2xl h-full shadow-lg">
 					<div className="text-bolder text-base">
 						QTY
 					</div>
@@ -45,12 +45,12 @@ export default function BuyCart({ item, onClose }) {
 					))}
 				</div>
 				<div className="flex w-4/5 h-full">
-					<div className="p-32 pl-0 pr-12 w-3/6">
-						<div className="relative bg-gray-100 rounded-full w-full h-full">
+					<div className="p-32 pl-0 pr-12 w-3/6 shadow-inner">
+						<div className="relative w-full h-full">
 							<img src={item.imgSrc} className="absolute" style={{ transform: "rotate(-45deg)" }} />
 						</div>
 					</div>
-					<div className="flex-1 space-y-4 p-5 pt-24 pb-15 w-3/6">
+					<div className="flex-1 space-y-4 p-5 pl-20 pt-24 pb-15 w-3/6">
 						<div className="text-bold text-4xl">
 							<h5>{item.name} {item.model}</h5>
 						</div>
