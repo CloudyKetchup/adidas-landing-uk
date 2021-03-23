@@ -5,7 +5,7 @@ import BuyCart from "./BuyCart";
 const landingProduct = {
 	quantity: 5,
 	sizes: ["11", "02", "03", "04", "05"],
-	imgSrc: "https://cms-cdn.thesolesupplier.co.uk/2017/09/adidas-Swift-Run-Black-White_w900.png",
+	imgSrc: "/assets/adidas-swift-run-black.png",
 	name: "Adidas Swift",
 	priceCurrency: "GBP",
 	price: 75.99,
@@ -29,7 +29,7 @@ export default function Landing() {
       >
         <source src="https://brand.assets.adidas.com/video/upload/q_auto,vc_auto/video/upload/running-ss21-solarboost-launch-hp-MH-large-3d-d_idfozi.mp4" type="video/mp4"/>
       </video> 
-      <div className="flex h-full w-full absolute z-10 relative">
+      <div className="flex h-full w-full z-10 relative">
         <div className="bg-transparent h-full w-3/6 p-24 pt-56 text-white space-y-6">
           <div className="text-wrap-all text-bold" style={{ fontSize: "1.5em" }}>
             <p>
@@ -50,21 +50,19 @@ export default function Landing() {
           </div>
         </div>
         <div
-          className="bg-gray-50 w-3/6 absolute"
+          className="w-3/6 bg-white absolute transform -rotate-6 shadow-xl"
           style={{
-            opacity: "0.9",
-            transform: "rotate(-5deg)",
             height: "150vh",
             top: "-40px",
             right: "-50px"
           }}
         >
-          <div className="mt-25 p-10 pt-64 h-full relative" style={{ transform: "rotate(5deg)" }}>
+          <div className="mt-25 p-10 pt-64 h-full relative transform rotate-6">
             <div className="text-7xl">
-              <h1 className="">
+              <h1>
                 {landingProduct.name}
               </h1>
-              <h1 className="">
+              <h1>
                 {landingProduct.model}
               </h1>
             </div>
