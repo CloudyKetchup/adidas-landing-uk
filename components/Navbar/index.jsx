@@ -1,25 +1,8 @@
-import { useEffect, useRef } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 
 export default function Navbar() {
-	const ref = useRef();
-
-	const onScroll = () => {
-		console.log(window.scrollX);
-	};
-
-	useEffect(() => {
-		if (!ref.current) return;
-
-		window.addEventListener("scroll", onScroll);
-
-		return () => {
-			window.removeEventListener("scroll", onScroll);
-		};
-	}, []);
-
 	return (
-  	<nav ref={ref} className="fixed inset-x-0 z-20 shadow-lg" style={{
+  	<nav className="fixed inset-x-0 z-20 shadow-lg" style={{
   		background: "rgba(255, 255, 255, 0.5)",
   		backdropFilter: "blur(15px)"
   	}}>
