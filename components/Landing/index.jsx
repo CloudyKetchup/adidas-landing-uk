@@ -26,6 +26,8 @@ export default function Landing() {
         loop
         controls={false}
         style={{ filter: "brightness(40%)" }}
+        disablePictureInPicture
+        disableRemotePlayback
       >
         <source src="https://brand.assets.adidas.com/video/upload/q_auto,vc_auto/video/upload/running-ss21-solarboost-launch-hp-MH-large-3d-d_idfozi.mp4" type="video/mp4"/>
       </video> 
