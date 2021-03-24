@@ -24,13 +24,14 @@ export default function Landing() {
         autoPlay
         muted
         loop
+        playsInline
         controls={false}
         style={{ filter: "brightness(40%)" }}
+        src="https://brand.assets.adidas.com/video/upload/q_auto,vc_auto/video/upload/running-ss21-solarboost-launch-hp-MH-large-3d-d_idfozi.mp4"
+        jtype="video/mp4"
         disablePictureInPicture
         disableRemotePlayback
-      >
-        <source src="https://brand.assets.adidas.com/video/upload/q_auto,vc_auto/video/upload/running-ss21-solarboost-launch-hp-MH-large-3d-d_idfozi.mp4" type="video/mp4"/>
-      </video> 
+      />
       <div className="flex h-full w-full z-10 relative">
         <div className="bg-transparent h-full w-3/6 p-24 pt-56 text-white space-y-6">
           <div className="text-wrap-all text-bold" style={{ fontSize: "1.5em" }}>
