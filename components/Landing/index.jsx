@@ -27,7 +27,7 @@ export default function Landing() {
         playsInline
         controls={false}
         style={{ filter: "brightness(40%)" }}
-        src="https://brand.assets.adidas.com/video/upload/q_auto,vc_auto/video/upload/running-ss21-solarboost-launch-hp-MH-large-3d-d_idfozi.mp4"
+        src="/videos/adidas-landing.mp4"
         jtype="video/mp4"
         disablePictureInPicture
         disableRemotePlayback

@@ -2,10 +2,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 
 export default function Navbar() {
 	return (
-  	<nav className="fixed inset-x-0 z-20 shadow-lg" style={{
-  		background: "rgba(255, 255, 255, 0.5)",
-  		backdropFilter: "blur(15px)"
-  	}}>
+  	<nav className="backdrop-blur fixed inset-x-0 z-20 shadow-lg" style={{ background: "rgba(255, 255, 255, 0.5)" }}>
       <div className="mx-auto">
         <div className="flex justify-between">
           <div className="flex space-x-2 space-y-2 p-8">
